@@ -1,0 +1,176 @@
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation */
+#navbar{
+    top:0px;
+    display:flex;
+    margin:0px;
+    padding:0px;
+}
+.box3{
+    border:2px solid red;
+    border-radius:23px;
+    background-color: rgba(255, 255, 255, 0.379);
+    margin:0px;
+    padding:0px;
+    
+    
+}
+    .box{
+        padding:0px;
+        margin:0px;
+        display:block;
+    }
+navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+}
+#navbar ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{
+    padding:7px 85px;
+    margin:0px;
+    list-style:none;
+    
+}
+#navbar ul li a{
+    border:1px solid blue;
+    font-size:1.5rem;
+    text-decoration:none;
+    padding:2px;
+    display:block;
+    border-radius:30px;
+    background-color:aquamarine;
+    margin:0px;
+    
+}
+#navbar ul li a:hover{
+    color:rgb(242, 78, 193);
+    background-color: rgb(172, 172, 248);
+}
+#navbar img{
+    height:70px;
+    border-radius:50%;
+    margin:10px 8px;
+}
+#logo{
+    height:50px;
+    margin:0px;
+    padding:0px;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    height:500px;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-2;
+    opacity:0.85;
+    background:url(car2.jpg) no-repeat center center/cover;
+    margin:0px;
+    padding:0px;
+}
+#home h1{
+    color:white;
+    justify-content:center;
+    display:flex;
+    font-size:2.5rem;
+    font-family: 'Bree Serif', serif;
+    margin:0px;
+    padding:0px;
+}
+#home p{
+        justify-content:center;
+    display:flex;
+    color:white;
+    font-size:1.25rem;
+    font-family: 'Bree Serif', serif;
+    margin:0px;
+    padding:0px;
+}
+.heading2{ 
+    font-size:2rem;
+    text-align:center;
+    color:rgb(67, 14, 241);
+    border:2px solid blue;
+    display: flex;
+   border-radius:20px;
+    justify-content:center;
+    background-color: rgb(139, 253, 253);
+    font-family: 'Bree Serif', serif;
+    margin: 45px 0px -65px 0px;
+    padding: 25px;
+    }
+    .heading2:hover{
+        background-color: bisque;
+        color:rgb(237, 64, 64);
+    }
+    #middle{
+        margin:80px 3px 5px -5px;
+        display:flex;
+    }
+    #middle .box{
+        border:2px solid brown;
+        background-color:rgb(227, 209, 188);
+        margin:4px 6px;
+        padding:5px;
+        border-radius:20px;
+        margin-bottom:20px;
+        
+    }
+    #middle .box p{
+        color:white;
+        text-align:center;
+    }
+    .car1{
+        height: 400px;
+        margin: -42px 25px -4px 25px;
+        padding: 8px 15px;
+    }
+    .buggy{
+        height: 400px;
+        margin: -42px 25px -4px 25px;
+        padding: 8px 15px;
+    }
+    .bike{
+        height: 400px;
+        margin:-42px 25px -4px 25px;
+        padding: 8px 15px;
+    }
+    .title{
+        font-size:3rem;
+        text-align:center;
+        margin: -7px 0px 37px 0px;
+        padding:0px;
+    }
+    .btn{
+        justify-content:center;
+        align-items:center;
+        margin:auto;
+        display:block;
+        font-size:2rem;
+        border-radius:40px;
+        padding:0px 350px 0px 350px;
+        font-family: 'Baloo Bhai', cursive;
+        color:blue;
+        background-color: rgb(246, 204, 195);
+        cursor:pointer;
+    }
+    .btn:hover{
+        color:rgb(226, 226, 43);
+        background-color: rgb(249, 106, 106);
+    }
+  

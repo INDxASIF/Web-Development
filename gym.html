@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL FITNESS</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        background: url('woman.jpg');
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lobster', cursive;
+        height: 800px;
+    }
+
+    .left {
+        /* display: inline-block; */
+
+        margin: 20px 5px;
+        padding: 15px 450px;
+        width: 85%;
+    }
+
+    .mid {
+        margin: -69px 26px 29px 34px;
+        padding: 0px;
+        top: 0px;
+        height: 10px;
+        width: 10px;
+
+    }
+
+    .mid img {
+        height: 50px;
+        width: 50px;
+        border-radius: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 45px;
+        top: 28px;
+        /* display: inline-block; */
+    }
+
+    .btn {
+        font-family: 'Lobster', cursive;
+        border-radius: 25px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: cornflowerblue;
+        border: 2px solid black;
+    }
+
+    .btn:hover {
+        color: rgb(224, 239, 239);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(8, 126, 8);
+        text-decoration: none;
+        font-weight: bold;
+        border: 3px solid black;
+        padding: 4px 23px;
+        margin: 11px 6px;
+        border-radius: 25px;
+        background-color: rgb(244, 130, 135);
+    }
+
+    .navbar li a:hover {
+        color: rgb(231, 228, 225);
+        background-color: rgb(106, 101, 245);
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black
+    }
+
+    .btn a:hover {
+        color: white;
+    }
+
+    .container {
+        border: 3px solid black;
+        height: 500px;
+        width: 50%;
+        text-align: center;
+        margin: 15px auto;
+        padding: 30px;
+        border-radius: 50px;
+    }
+
+    .form-group input {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        display: block;
+        width: 525px;
+        padding: 7px;
+        border: 3px solid #135f48;
+        margin: 7px auto;
+        font-size: 25px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        color: #5200d6;
+        margin: 3px auto;
+        padding: 1px 1px;
+        border: 3px solid black;
+        background-color: #a3e5e5;
+        border-radius: 25px;
+    }
+
+    .button {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        display: block;
+        width: 525px;
+        padding: 7px;
+        border: 3px solid #135f48;
+        margin: 7px auto;
+        font-size: 25px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        color: rgb(249, 249, 250);
+        background-color: rgb(70, 5, 235);
+    }
+
+    .gym {
+        font-size: 21px;
+        height: 40px;
+        width: 61px;
+        padding: 0px 0px 18px 3px;
+        margin: 0px 3px 0px 1px;
+        color: #093436;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <ul class="navbar">
+                <li><a href="https://google.com" target="_blank">HOME</a></li>
+                <li><a href="https://facebook.com" target="_blank">APPLY</a></li>
+                <li><a href="https://twitter.com" target="_blank">STATUS</a></li>
+                <li><a href="https://instagram.com" target="_blank">TACTICS</a></li>
+                <li><a href="https://sarkariresult.com" target="_blank">RESULTS</a></li>
+            </ul>
+        </div>
+        <div class="mid">
+            <img src="logo.jpg">
+            <div class="gym">IND GYM</div>
+        </div>
+        <div class="right">
+            <button class="btn"><a href="https://www.typing.com/student/login#r:/student/lesson/335/accuracy-focus"
+                    target="_blank">JOIN
+                    US</a></button>
+            <button class="btn"><a href="https://www.youtube.com/" target="_blank">CALL US</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN TODAY FOR UNLIMITED BENEFITS</h1>
+        <form action="nonaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="gender" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Height in cm">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Weight in kg">
+            </div>
+            <button class="button">Submit Now</button>
+        </form>
+    </div>
+</body>
+
+</html>

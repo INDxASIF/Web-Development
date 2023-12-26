@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Part 5</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'; 
+        }
+        .item{
+            border:3px solid blue;
+            background-color:goldenrod;
+            padding: 20px 10px;
+        }
+        #navbar{
+            grid-area:navbar;
+        }
+        #section{
+            grid-area:section;
+        }
+        #aside{
+            grid-area:aside;
+        }
+        #footer{
+            grid-area:footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            HOME ABOUT CONTACT US
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere aspernatur, magnam laborum cupiditate officia ea repellat tempore necessitatibus labore omnis sunt doloribus architecto voluptatibus sequi quasi qui sapiente, illum sit facilis vitae ab recusandae velit alias reprehenderit. Laudantium delectus fugit cumque beatae, minus odit mollitia, quae asperiores a itaque repudiandae, fugiat officia vel aliquid molestiae! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi qui illo nostrum officiis earum dolore culpa consectetur unde necessitatibus laboriosam accusantium, ipsum error tenetur eligendi nulla beatae quo doloremque! Iusto unde, quidem non architecto voluptates necessitatibus alias? Quis nulla, recusandae mollitia reprehenderit praesentium corrupti modi itaque a nihil dolorem beatae excepturi eaque quaerat harum necessitatibus. Laborum consequuntur necessitatibus vel facilis, excepturi recusandae dolor eius natus, voluptates tempora quasi ducimus, dolore accusamus. Accusamus eum maiores corrupti iste eveniet itaque, est et distinctio? Tempora quos esse quidem, tempore sequi impedit natus sunt quae recusandae. Harum ab dignissimos blanditiis error fugit, repudiandae quae ratione deleniti repellat rerum delectus sit minima quis. Facilis omnis totam consequuntur laudantium delectus itaque impedit! Totam aliquam quod adipisci ipsum. Debitis ad iste, voluptatibus animi fugiat harum nihil architecto aliquid eveniet optio ipsa in quae labore tempore perferendis assumenda adipisci repudiandae mollitia obcaecati repellat tempora. Quos veritatis deleniti tenetur mollitia culpa, eveniet ad iure inventore sit excepturi. Nisi labore eum sit, delectus illum eos et ut ex, molestiae enim vitae? Cum, nisi illo quaerat est hic, ratione iusto, voluptatum optio qui inventore aut labore quam? Laborum aut error facere fugiat sequi maxime eum minus odit, magnam sit illum tempore ratione quae ut quibusdam ipsam quas nostrum voluptates et labore voluptatum veritatis. Blanditiis dolorum, tempore quia consequatur quae voluptatum eum quisquam officiis at sed consequuntur expedita esse labore illum illo cumque voluptate velit et temporibus ad dolorem doloremque? Sint asperiores exercitationem vitae natus alias atque repellendus dolorem totam! Eos aliquid error laudantium, quae iure eius dignissimos necessitatibus nisi possimus ipsam pariatur sapiente molestiae culpa at soluta laborum sit! A tempore temporibus accusamus exercitationem veniam minima et numquam quia tempora voluptatem, voluptatum id, quos dignissimos. Accusamus alias eum beatae tempora pariatur! Voluptatum, similique labore vitae ullam omnis deserunt praesentium optio excepturi.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia error possimus quis assumenda a voluptas repellat! Atque temporibus, mollitia maiores voluptatibus voluptas a libero quaerat corporis dicta eius ea consectetur saepe unde ducimus incidunt provident ullam delectus culpa sit facilis officia eos impedit fuga corrupti. Natus, tenetur. Fuga et ratione repellendus incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, vitae dolore ratione nam sit minus dolorem beatae quos maxime rerum iste maiores hic velit voluptas corporis ut ipsam laudantium saepe ipsum quam repudiandae sunt culpa. Laboriosam nihil nesciunt maiores laudantium pariatur obcaecati repellendus ut cum, eaque tenetur voluptatibus voluptates, nostrum quia perspiciatis ipsum repudiandae quo voluptatum est! Perferendis consectetur iusto veritatis illo dolorem eaque vel sunt. Reiciendis placeat ratione esse natus asperiores deserunt dolorum suscipit sint cum, assumenda beatae sed! Eaque et ullam ad, sint similique vero ipsam suscipit. Sit sequi provident rem! Repellat accusamus adipisci quaerat dolor corrupti autem fugiat officia aspernatur, quas ducimus totam odit ab velit, delectus veniam optio molestias maxime eveniet facilis fugit laboriosam inventore voluptatibus est quae? Omnis voluptas eveniet culpa, qui, ratione illum eius veniam quibusdam laboriosam quaerat maiores. Possimus eos est ullam. Beatae dolor porro quos corporis commodi in deserunt sapiente odio impedit?
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda neque molestias asperiores, error nihil dolore obcaecati quis at. Ut mollitia temporibus tempora corporis!
+        </div>
+    </div>
+</body>
+</html>

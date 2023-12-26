@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans&family=Lilita+One&family=Lobster&family=Righteous&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header::before {
+            background: url(https://source.unsplash.com/collection/190727/1600x120000) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity:0.5; */
+            margin: -50px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+
+        }
+
+        section {
+            margin: 3px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border:3px solid blue; */
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 25px 50px;
+        }
+
+        section::before {
+            /* content:"this is a hacked" */
+        }
+
+        /* section::after {
+            content: "Hackers Welcome Here"
+        } */
+
+        .navigation {
+            font-size: 30px;
+            font-family: 'Alfa Slab One', cursive;
+            /* display:flex; */
+        }
+
+        h1 {
+            text-align: center;
+            /* font-weight:bold; */
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+
+            padding: 25px 12px;
+            border: 3px solid blue;
+            margin: 25px 10px;
+            background-color: rgb(248, 32, 32);
+            border-radius: 20px;
+            box-shadow: -7px -7px 10px 5px yellow;
+        }
+
+        h2 {
+            text-shadow: -1px 2px 5px rgb(244, 243, 250);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio at repellat eligendi placeat maxime
+                vel dicta iusto fugiat fuga autem?</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ratione asperiores harum expedita
+                atque modi architecto, praesentium ex aliquam nemo sequi inventore rerum perspiciatis rem.the</p>
+        </div>
+
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ratione asperiores harum expedita
+                atque modi architecto, praesentium ex aliquam nemo sequi inventore rerum perspiciatis rem.</p>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Data</li>
+                <li class="item">Coding</li>
+                <li class="item">Source Code</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome To Ethical Hacking</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate amet impedit dicta, fuga
+                voluptatibus ea necessitatibus quod consectetur dignissimos vel! Consequatur, nihil excepturi? Ut
+                consectetur voluptatum adipisci nemo, excepturi ipsum eum voluptatem laborum, aliquam at in sint impedit
+                nostrum dolorem!</p>
+        </section>
+    </header>
+</body>
+
+</html>

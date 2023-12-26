@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in HTML</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: bisque;
+            height: 10000px;
+        }
+
+        /*CSS Position: static (default), absolute, relative, fixed, sticky */
+        .box {
+            border: 3px solid blue;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            display: inline-block;
+        }
+
+
+        /* relative: relative to its normal position */
+        /* top: 30px;
+        left:30px; */
+        /* right: 4px;
+        top: 2px;  */
+        #box3 {
+            position: sticky;
+            top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

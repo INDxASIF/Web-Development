@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* Element Selector */
+        p {
+            border: 2px solid blue;
+
+        }
+
+        /* ID Selector */
+        #redElement {
+            font-family: cursive;
+            color: red;
+            background-color: aqua;
+            border: 3px solid pink;
+        }
+
+        /* Class Selector */
+        .blueElement {
+            font-family: cursive;
+            color: green;
+            background-color: aqua;
+            border: 3px solid pink;
+        }
+
+        /* Grouping Selector */
+        footer,
+        span,
+        quote {
+            background-color: rgb(235, 25, 182);
+            border: 3px solid rgb(41, 0, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS SELECTORS</h2>
+    <P>This is a simple paragraph to demonstrate css slectors</P>
+    <P id="redElement">This is another simple paragraph to demonstrate css slectors</P>
+    <P class="blueElement">This is another simple paragraph to demonstrate css slectors</P>
+    <div>
+        <P>This is yet another simple paragraph inside div to demonstrate css slectors</P>
+        <footer>This is footer</footer>
+    </div>
+    <span>This is Span
+    </span>
+    <QUOTE>This is quote</QUOTE>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Media Queries</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+        }
+        .cls{
+            border:3px solid blue;
+            padding:10px 20px;
+            background-color:beige;
+        }
+        nav{
+            grid-area:navbar;
+        }
+        section{
+            grid-area:section;
+        }
+        aside{
+            grid-area:aside;
+        }
+        footer{
+            grid-area:footer;
+            text-align:center;
+        }
+        @media only screen and (max-width:200px) {
+            body{
+                background-color:red;
+            }
+            .container{
+            
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        }
+        span{
+            display:block;
+            text-align:center;
+        }
+        }
+        @media (min-width:200px) and (max-width:400px) {
+            body{
+                background-color:rgb(50, 232, 22);
+            }
+            .container{
+            
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        }
+        span{
+            /* display:block; */
+            text-align:center;
+        }
+        }
+        @media (min-width:400px) and (max-width:800px) {
+            body{
+                background-color:rgb(203, 239, 44);
+            }
+            .container{
+            
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        }
+        span{
+            /* display:block; */
+            align-items:center;
+            justify-content:center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="cls">
+            <span>HOME</span>
+             <span>ABOUT</span>
+              <span>CONTACT</span>
+        </nav>
+        <section class="cls">
+           <h2>Learn CSS EASILY</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quis labore perspiciatis blanditiis molestias soluta hic, ipsum fugit eaque voluptatem eius, nam excepturi! Nesciunt, odit. Ab velit neque repellendus reiciendis optio quas consequuntur labore aliquid, quod nesciunt alias delectus natus. Assumenda quasi nemo ullam rerum illum aliquid facilis nam, placeat aspernatur doloremque accusamus ratione, ut officia quod delectus fuga earum, magni totam! Praesentium exercitationem placeat eos. Ullam ea placeat laudantium laborum quam modi aperiam facere. Ratione provident aut quis blanditiis in modi sit omnis! Iure rem cupiditate quod aliquid voluptatem rerum, maxime aspernatur facilis. Dolorum laudantium, aperiam nam molestiae maxime placeat, omnis fuga, praesentium doloremque inventore error! Incidunt qui nisi deserunt totam doloremque molestiae aut. Similique facilis qui officia ipsam ex expedita repellendus. Omnis quibusdam architecto nihil laudantium, ea animi veritatis illo cumque? At, quod esse quisquam culpa, tempore id dolor corporis error doloribus suscipit iusto officiis quidem amet harum. Corporis et omnis necessitatibus tempora, ad officia incidunt enim cupiditate dolores soluta consequatur velit. Necessitatibus vero temporibus laborum maxime, doloribus veritatis provident iste quia aut qui officiis, corporis sit non perferendis minima odio nam unde quae quidem, mollitia explicabo reprehenderit quam laudantium porro? Saepe voluptatibus ipsum fugiat eum, dolorum labore.</p>
+        </section>
+        <aside class="cls">
+            <h1>More About CSS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio autem aspernatur consequatur reprehenderit natus adipisci rerum voluptatum ea, harum sunt delectus repellendus facere exer</p>
+        </aside>
+        <footer class="cls">Copyright AsifAhmad2023</footer>
+    </div>
+</body>
+</html>

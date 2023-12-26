@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        :root {
+            --box-color: red;
+        }
+
+        .container {
+            background-color: yellow;
+            height:100%;
+            width:100%;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 3px solid blue;
+            background-color: var(--box-color);
+            position:relative;
+            animation-name: Asif2;
+            animation-duration:8s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:alternate;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay:2s; */
+            /* animation-direction:alternate-reverse; */
+            /* animation-direction:reverse; */
+        }
+
+        @keyframes Asif1{
+            form{
+                width:0px;
+            }
+            to{
+                width:20%;
+            }
+        }
+        /* .h2 {
+            animation-name: ASIF2;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+        } */
+
+        @keyframes Asif2 {
+            0% {
+                top: 0px;
+                left:0px;
+            }
+
+            25% {
+                top:550px;
+                left:0px;
+            }
+
+            50% {
+                top:550px;
+                left:1365px;
+            }
+
+            75% {
+                top:0px;
+                left:1365px;
+            }
+
+            100% {
+                top: 0px;
+            left:0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            ASIF AHMAD
+        </div>
+    </div>
+</body>
+
+</html>

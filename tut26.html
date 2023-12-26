@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo Selectors</title>
+    <style>
+        input[type='text'] {
+            padding: 20px;
+            border: 4px solid blue;
+            margin: 10px;
+            background-color: yellow;
+            border-radius: 50px;
+        }
+        input[type='password'] {
+            padding: 20px;
+            border: 4px solid rgb(232, 9, 9);
+            margin: 10px;
+            background-color: rgb(108, 17, 255);
+            border-radius: 50px;
+        }
+        input[type='submit'] {
+            padding: 10px;
+            border: 4px solid rgb(68, 2, 210);
+            margin: 2px;
+            background-color: rgb(105, 223, 20);
+            border-radius: 50px;
+            width:200px;
+        }
+
+        /* a[target]{
+            font-size: 50px;
+            color:rgb(222, 76, 178);
+            background-color:yellow;
+            text-decoration:none;
+        } */
+        a[target='_blank'] {
+            font-size: 60px;
+            color: white;
+            background-color: red;
+        }
+        li:nth-child(2n+0){
+            color:rgb(8, 5, 180);
+            background-color:rgb(203, 203, 13);
+            display:grid;
+        }
+        /* li:nth-child(2n+1){
+            color:rgb(233, 234, 225);
+            background-color:rgb(7, 15, 10);
+            display:inline;
+        } */
+        li:nth-child(odd){
+            color:rgb(233, 234, 225);
+            background-color:rgb(7, 15, 10);
+            /* display:inline; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">Go to Google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item10">Item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

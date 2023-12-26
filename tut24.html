@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: red;
+            color:white;
+            font-size:60px;
+            text-align:center;
+            display:none;
+            
+        }
+        @media (min-width:100px) and (max-width:2500px){
+            #box-1{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:100px) and (max-width:1500px){
+            #box-2{
+                display: block;
+                background-color: rgb(31, 212, 11);
+            }
+        }
+        @media (min-width:100px) and (max-width:1000px){
+            #box-3{
+                display: block;
+                background-color: rgb(52, 5, 221);
+            }
+        }
+        @media (min-width:50px) and (max-width:800px){
+            #box-4{
+                display: block;
+                background-color: rgb(246, 101, 10);
+            }
+        }
+        </style>
+    
+</head>
+<body>
+    <div class="box" id="box-1">I am Computer</div>
+    <div class="box" id="box-2">I am Phone</div>
+    <div class="box" id="box-3">I am Aeroplane</div>
+    <div class="box" id="box-4">I am Tablet</div>
+</body>
+</html>
